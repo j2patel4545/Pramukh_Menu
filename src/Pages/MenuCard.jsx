@@ -29,7 +29,7 @@ function MenuCard() {
                     </motion.h3>
                     <div className='flex w-full justify-end'>
                         <motion.h2 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.5 }}
-                            className='text-white/70 text-6xl mt-7 mr-12 -mb-14 flex font-mono'>&</motion.h2>
+                            className='text-white/70 text-6xl mt-7 mr-4 -mb-14 flex font-mono'>&</motion.h2>
                         <motion.h3 initial={{ scale: 0.5, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 1.2 }}
                             className="text-[#222222] mx-2 text-8xl flex justify-end font-bold [text-shadow:_-1px_-1px_0_#A6B459,_1px_-1px_0_#A6B459,_-1px_1px_0_#A6B459,_1px_1px_0_#A6B459]">
                             પંજાબી
