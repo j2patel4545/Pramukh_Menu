@@ -8,15 +8,15 @@ export default function Paubhaji() {
         
         <div className="mt-4">
           {[
-            { name: "પાઉભાજી", price: "₹ 50/40", bestSeller: true },
+            { name: "પાઉભાજી", price: "₹ 50/40" },
             { name: "બટર પાઉભાજી ", price: "₹ 70/60" },
-            { name: "ચીઝ પાઉભાજી ", price: "₹ 70/60", bestSeller: true },
+            { name: "ચીઝ પાઉભાજી ", price: "₹ 70/60" },
             { name: "બટર ચીઝ પાઉભાજી  ", price: "₹ 80/60" },
             { name: "પનીર બટર પાઉભાજી ", price: "₹ 90/70" },
             { name: "પાઉં ", price: "₹ 06" },
-            { name: "બટર પાઉં ", price: "₹ 10", bestSeller: true },
+            { name: "બટર પાઉં ", price: "₹ 10" },
             { name: " મસાલા  પાઉં  ", price: "₹ 50/25" },
-            { name: "ભાજી -પુલાવ  ", price: "₹ 70/50", bestSeller: true }
+            { name: "ભાજી -પુલાવ  ", price: "₹ 70/50" }
           ].map((item, index) => (
             <div key={index} className="flex justify-between border-zinc-600 border-b py-2">
               <span className="flex items-center">
