@@ -5,6 +5,7 @@ import ChineseTwo from './ChineseTwo'
 import Feedback from './Feedback'
 import PunjabiDish from './PunjabiDish'
 import Punjabi from './Punjabi'
+import Paubhaji from './Paubhaji'
 
 function MenuCard() {
     return (
@@ -51,7 +52,7 @@ function MenuCard() {
             <ChineseTwo />
             <Punjabi/>
             <PunjabiDish/>
-            <Punjabi/>
+            <Paubhaji/>
             <Feedback/>
             <h2 className=' flex justify-center items-center p-3  text-lg font-mono'>MOBILE NO : 9904175561</h2>
         </div>
