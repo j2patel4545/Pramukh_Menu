@@ -1,6 +1,6 @@
 export default function Paubhaji() {
     return (
-      <div className="bg-[#222222] text-white p-6 font-sans">
+      <div className="bg-[#222222] sm:px-36 text-white p-6 font-sans">
         
         
         <div className="mt-6 bg-green-200 p-2 w-max rounded-lg text-black text-lg">
