@@ -32,7 +32,7 @@ function Feedback() {
     };
 
     return (
-        <div className='w-screen py-10 pt-2 bg-[#222222] px-[6%]'>
+        <div className='w-screen sm:px-[35%] py-10 pt-2 bg-[#222222] px-[6%]'>
             <div className="bg-white border border-slate-200 grid grid-cols-6 gap-2 rounded-xl p-2 text-sm">
                 <h1 className="text-center text-slate-200 text-xl font-bold col-span-6">Send Feedback</h1>
                 <textarea
