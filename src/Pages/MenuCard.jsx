@@ -25,14 +25,14 @@ function MenuCard() {
                     <motion.h6 initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.2 }}
                         className='flex sm:justify-center sm:-mr-96 sm:-mt-20 sm:text-5xl justify-end text-amber-50 -mt-10 mr-16 text-lg font-serif'>Restaurant</motion.h6>
                     <motion.h3 initial={{ scale: 0.5, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 1.2 }}
-                        className="text-[#222222] text-8xl mt-8 ml-3 font-bold [text-shadow:_-1px_-1px_0_#A6B459,_1px_-1px_0_#A6B459,_-1px_1px_0_#A6B459,_1px_1px_0_#A6B459]">
+                        className="text-[#222222] text-8xl mt-8 ml-3 sm:-ml-44 sm:justify-center sm:flex font-bold [text-shadow:_-1px_-1px_0_#A6B459,_1px_-1px_0_#A6B459,_-1px_1px_0_#A6B459,_1px_1px_0_#A6B459]">
                         ચાઇનીઝ
                     </motion.h3>
-                    <div className='flex w-full justify-end'>
+                    <div className='flex w-full sm:justify-center sm:ml-44 sm:flex justify-end'>
                         <motion.h2 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.5 }}
                             className='text-white/70 text-6xl mt-7 mr-4 -mb-14 flex font-mono'>&</motion.h2>
                         <motion.h3 initial={{ scale: 0.5, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ duration: 1.2 }}
-                            className="text-[#222222] mx-2 text-8xl flex justify-end font-bold [text-shadow:_-1px_-1px_0_#A6B459,_1px_-1px_0_#A6B459,_-1px_1px_0_#A6B459,_1px_1px_0_#A6B459]">
+                            className="text-[#222222]   mx-2 text-8xl flex justify-end font-bold [text-shadow:_-1px_-1px_0_#A6B459,_1px_-1px_0_#A6B459,_-1px_1px_0_#A6B459,_1px_1px_0_#A6B459]">
                             પંજાબી
                         </motion.h3>
                     </div>
@@ -41,12 +41,12 @@ function MenuCard() {
                     initial={{ x: -1000 }}
                     animate={{ x: 0 }}
                     transition={{ type: "spring", duration:3,delay:1.5, stiffness: 50 }}
-                    className="flex w-full mt-4 h-10 text-zinc-50 p-2 py-2 my-3 text-2xl justify-between items-center border-t-2 border-[#A6B459] border-b-2"
+                    className="flex  mt-4 h-10 sm:mx-32 text-zinc-50 p-2 py-2 my-3 text-2xl justify-between items-center border-t-2 border-[#A6B459] border-b-2"
                 >
                     <h2>veg Only</h2>
                     <h2>mo no:9904175561</h2>
                 </motion.div>
-                    <img src="./LandingFood.webp" alt="" />
+                    <img src="./LandingFood.webp" className=' object-contain h-full w-full  border-t-2 border-white/30 sm:hidden rounded-b-4xl' alt="" />
             </div>
             <ChineseMenu />
             <ChineseTwo />
