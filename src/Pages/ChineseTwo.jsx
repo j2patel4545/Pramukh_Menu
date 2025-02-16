@@ -1,6 +1,6 @@
 export default function ChineseTwo() {
     return (
-      <div className="bg-[#222222]  text-white p-6 font-sans">
+      <div className="bg-[#222222] sm:px-36  text-white p-6 font-sans">
         {/* <div className="relative ">
           <img
             src="https://i.pinimg.com/736x/d2/26/09/d22609efc42984ac31068cafc8f9427b.jpg"
