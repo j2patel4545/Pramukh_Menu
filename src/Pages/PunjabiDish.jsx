@@ -1,6 +1,6 @@
 export default function PunjabiDish() {
     return (
-      <div className="bg-[#222222] text-white p-6 font-sans relative">
+      <div className="bg-[#222222] sm:px-36 text-white p-6 font-sans relative">
         {/* Header Section with Images */}
         <div className="relative flex flex-col items-center">
           {/* <div className="w-full flex justify-between">
