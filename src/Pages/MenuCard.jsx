@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import ChineseMenu from './ChineseMenu'
 import ChineseTwo from './ChineseTwo'
@@ -8,6 +8,12 @@ import Punjabi from './Punjabi'
 import Paubhaji from './Paubhaji'
 
 function MenuCard() {
+    const [language, setLanguage] = useState('gujarati');
+
+    const handleLanguageChange = (lang) => {
+        setLanguage(lang);
+    };
+
     return (
         <div>
             <div className='flex flex-col text-white w-screen bg-[#222222] min-h-screen'>
@@ -40,23 +46,44 @@ function MenuCard() {
                 <motion.div
                     initial={{ x: -1000 }}
                     animate={{ x: 0 }}
-                    transition={{ type: "spring", duration:3,delay:1.5, stiffness: 50 }}
-                    className="flex  mt-4 h-10 sm:mx-32 text-zinc-50 p-2 py-2 my-3 text-2xl justify-between items-center border-t-2 border-[#A6B459] border-b-2"
+                    transition={{ type: "spring", duration: 3, delay: 1.5, stiffness: 50 }}
+                    className="flex mt-4 h-10 sm:mx-32 text-zinc-50 p-2 py-2 my-3 text-2xl justify-between items-center border-t-2 border-[#A6B459] border-b-2"
                 >
                     <h2>veg Only</h2>
                     <h2>mo no:9904175561</h2>
                 </motion.div>
-                    <img src="./LandingFood.webp" className=' object-contain h-full w-full  border-t-2 border-white/30 sm:hidden rounded-b-4xl' alt="" />
+                <img src="./LandingFood.webp" className='object-contain h-full w-full border-t-2 border-white/30 sm:hidden rounded-b-4xl' alt="" />
+                <div className='flex justify-center mt-4'>
+                    <button
+                        onClick={() => handleLanguageChange('gujarati')}
+                        className={`mx-2 p-1 px-2 border-2 border-green-300 rounded ${language === 'gujarati' ? 'bg-green-200 text-black border-2 border-black' : ''}`}
+                    >
+                        Gujarati
+                    </button>
+                    <button
+                        onClick={() => handleLanguageChange('hindi')}
+                        className={`mx-2 p-1 px-2 border-2 border-green-300 rounded ${language === 'hindi' ? 'bg-green-200 text-black border-2 border-black' : ''}`}
+                    >
+                        Hindi
+                    </button>
+                    <button
+                        onClick={() => handleLanguageChange('english')}
+                        className={`mx-2 p-1 px-2 border-2 border-green-300 rounded ${language === 'english' ? 'bg-green-200 text-black border-2 border-black' : ''}`}
+                    >
+                        English
+                    </button>
+                </div>
             </div>
-            <ChineseMenu />
-            <ChineseTwo />
-            <Punjabi/>
-            <PunjabiDish/>
-            <Paubhaji/>
-            <Feedback/>
-            <h2 className=' flex justify-center items-center p-3  text-lg font-mono'>MOBILE NO : 9904175561</h2>
+
+            <ChineseMenu language={language} />
+            <ChineseTwo language={language} />
+            <Punjabi language={language} />
+            <PunjabiDish language={language} />
+            <Paubhaji language={language} />
+            <Feedback  />
+            <h2 className='flex justify-center items-center p-3 text-lg font-mono'>MOBILE NO : 9904175561</h2>
         </div>
     )
 }
 
-export default MenuCard
+export default MenuCard;
